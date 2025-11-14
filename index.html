@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Tags -->
+    <title>Pulse Automation – AI-Powered Automation for Small Businesses</title>
+    <meta name="description" content="Pulse Automation builds simple AI-powered automations for small businesses, helping them save time and streamline workflows. Freshman-built, professional service.">
+    <meta name="keywords" content="Pulse Automation, automation, AI, Zapier, small business, workflow automation, email automation, chatbots, Pennsylvania, Malvern">
+    <meta name="author" content="Pulse Automation">
+
+    <!-- Open Graph (SEO for social media previews) -->
+    <meta property="og:title" content="Pulse Automation – AI-Powered Automation for Small Businesses" />
+    <meta property="og:description" content="We build clean, simple automations that make small businesses more efficient." />
+    <meta property="og:type" content="website" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0d0d0d;
+            color: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #111;
+            border-bottom: 1px solid #333;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: #ccc;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 130px 20px;
+            background: linear-gradient(to bottom, #111, #000);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #bbb;
+        }
+
+        .section {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .section h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .services {
+            display: grid;
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .service-box {
+            background: #161616;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #2a2a2a;
+        }
+
+        .service-box h3 {
+            margin-top: 0;
+        }
+
+        /* Contact Form */
+        form {
+            display: grid;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        input, textarea {
+            padding: 15px;
+            border-radius: 6px;
+            border: none;
+            background: #222;
+            color: white;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+            background: #0066ff;
+            color: white;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        button:hover {
+            background: #0053d4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+            font-size: 14px;
+            border-top: 1px solid #222;
+            margin-top: 60px;
+        }
+
+        /* MOBILE FIXES */
+        @media(max-width: 600px) {
+            .hero h1 { font-size: 38px; }
+            .hero p { font-size: 17px; }
+            header { padding: 15px 20px; }
+            nav a { margin-left: 10px; font-size: 14px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Pulse Automation Logo">
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>PULSE AUTOMATION</h1>
+    <p>AI-powered automation built for real small businesses — by students who understand efficiency.</p>
+</section>
+
+<section class="section" id="services">
+    <h2>What We Do</h2>
+
+    <div class="services">
+        <div class="service-box">
+            <h3>Automated Email Replies</h3>
+            <p>We build clean automated email flows — perfect for restaurants, salons, gyms, and local shops.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Form → Inbox Automations</h3>
+            <p>We connect Google Forms, Sheets, and Gmail to respond instantly and save time.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Custom Workflow Automation</h3>
+            <p>Want something unique? We design small custom automations using AI and Zapier.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center; color:#aaa; margin-bottom:20px;">
+        This form submits to a **demo version** of our automation.  
+        Your information will only be used for demo/testing purposes.
+    </p>
+
+    <!-- FORM THAT SUBMITS TO GOOGLE SHEETS -->
+    <form method="POST" action="https://docs.google.com/forms/d/e/YOUR_FORM_ID_HERE/formResponse" target="hidden_iframe">
+        <input name="entry.123456" type="text" placeholder="Your Name" required>
+        <input name="entry.789012" type="email" placeholder="Your Email" required>
+        <textarea name="entry.345678" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Invisible frame for Google Forms -->
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+</section>
+
+<footer>
+    Pulse Automation © 2025 — AI-powered small business automation  
+    <br> Contact: pulseautomation.team@gmail.com
+</footer>
+
+</body>
+</html>
